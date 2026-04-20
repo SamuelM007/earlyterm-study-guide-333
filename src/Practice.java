@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Practice {
     /**
      * Returns the difference between the largest and smallest integer in an array.
@@ -20,6 +22,18 @@ public class Practice {
 
 
     // TODO: Implement the other methods from the README AND tests for each one
+
+    public static String longestWordByChar(String[] words, char l){
+        Set<String> set = new HashSet<>(Arrays.asList(words));
+        String largest = "";
+        
+        for(String word : set){
+            if(word.charAt(0) == l && word.length() > largest.length()){
+                largest = word;
+            }
+        }
+        return largest;
+    }
 
     // For each method you are only required to implement it for one of the data
     // structures. But use a different data structure for each method. For example,

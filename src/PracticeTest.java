@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 
+import java.beans.Transient;
+
 import org.junit.jupiter.api.Test;
 
 public class PracticeTest {
@@ -16,6 +18,16 @@ public class PracticeTest {
         // Assert
         // Largest: 9, Smallest: -5, Difference: 9 - -5 = 14
         assertEquals(14, actual);
+    }
+
+    @Test
+    void testLongestWordByCharPeterPiper(){
+        // Arrange
+        String[] words = {"peter","piper","picked","a", "peck","of","pickled","peppers", "peppering"};
+        // Act
+        String actual = Practice.longestWordByChar(words, 'p');
+        // Assert
+        assertEquals("peppering", actual);
     }
     
 
