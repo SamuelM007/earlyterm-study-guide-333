@@ -22,7 +22,8 @@ public class Practice {
 
 
     // TODO: Implement the other methods from the README AND tests for each one
-
+    //Count how many words are longer than n characters and shorter than m characters in:
+    //- A HashSet
     public static String longestWordByChar(String[] words, char l){
         Set<String> set = new HashSet<>(Arrays.asList(words));
         String largest = "";
